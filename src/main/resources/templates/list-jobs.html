@@ -14,8 +14,8 @@
 
 
 
-  <div th:each="job : ${jobs}">
-    <table class="job-listing">
+  <div>
+    <table class="job-listing" th:fragment="list-jobs" th:each="job : ${jobs}">
       <tr>
         <td>ID</td>
         <td th:text="${job.id}"></td>
